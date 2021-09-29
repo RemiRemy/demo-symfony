@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<h1>
+		{% if edition %}
+			Edition de
+			{{article.designation}}
+		{% else %}
+			Nouvel article
+		{% endif %}
+	</h1>
+
+	{{form(formulaire)}}{% endblock %}

@@ -1,0 +1,15 @@
+body>.card {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    text-align: center;
+    color: aliceblue;
+}
+
+.navbar{
+    margin-bottom: 40px ;
+}

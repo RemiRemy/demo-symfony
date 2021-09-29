@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon super site
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="card border-light mb-3" style="max-width: 20rem;">
+		<div class="card-header">
+			Créé le
+			{{article.dateCreation | date('d/m/Y') }}
+			à
+			{{article.dateCreation | date('H:i') }}
+		</div>
+
+		<div class="card-body">
+			<h4 class="card-title">
+				{{ article.designation }}
+			</h4>
+			<p class="card-text">
+				{{article.description}}
+			</p>
+			{% if article.nomImage  %}
+				<img src="/uploads/{{ article.nomImage }}" style="max-width:18rem">
+			{% endif %}
+		</div>
+	</div>
+
+
+{% endblock %}
